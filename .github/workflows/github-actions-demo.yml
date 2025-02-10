@@ -17,6 +17,7 @@ jobs:
           cc testwcw.c -o testwcw
       - name: Run
         run: |
+          uname -a
           ./testwcw
           
           
