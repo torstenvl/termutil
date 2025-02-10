@@ -12,4 +12,11 @@ jobs:
       - name: List files
         run: |
           ls ${{ github.workspace }}
+      - name: Compile
+        run: |
+          cc testwcw.c -o testwcw
+      - name: Run
+        run: |
+          ./testwcw
+          
           
