@@ -11,7 +11,8 @@ int main(void) {
  
     setlocale(LC_ALL, "");
  
-    printf("Arabic:   \"%ls\"     Cnt: %d\n", arabic, wcwidth(arabic[0]));
+    printf("Locale is %s\n", setlocale(LC_ALL, NULL));
+    //printf("Arabic:   \"%ls\"     Cnt: %d\n", arabic, wcwidth(arabic[0]));
     printf("Emoji 1:  \"%ls\"    Cnt: %d\n", emoji1, wcwidth(emoji1[0]));
     printf("Emoji 2:  \"%ls\"    Cnt: %d\n", emoji2, wcwidth(emoji2[0]));
     printf("Combined: \"%ls\"    Cnt: %d + %d + %d = %d\n", combin,
