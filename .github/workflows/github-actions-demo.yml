@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} test of wcwidth() on various OSes
 on: [push]
 jobs:
   Test-wcwidth:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - run: echo "This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
