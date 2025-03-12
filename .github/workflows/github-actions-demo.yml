@@ -1,6 +1,5 @@
 name: wcwidth() test
 run-name: ${{ github.actor }} test of wcwidth() on various OSes
-on: [push]
 jobs:
   Test-wcwidth:
     runs-on: macos-latest
